@@ -1,5 +1,6 @@
 package az.bookstorespringboot.bookstorespringboot.controller;
 
+
 import az.bookstorespringboot.bookstorespringboot.model.Book;
 import az.bookstorespringboot.bookstorespringboot.service.BookService;
 import lombok.RequiredArgsConstructor;
@@ -13,7 +14,6 @@ import java.util.Set;
 @RequiredArgsConstructor
 @Slf4j
 public class BookController {
-
     private final BookService bookService;
 
     @PostMapping
@@ -40,8 +40,4 @@ public class BookController {
         return bookService.update(id, book);
 
     }
-
-
-
-
 }
